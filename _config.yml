@@ -24,7 +24,7 @@ navbar-links:
   #  Musings:
   #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
-  Author's home: "https://www.parisi.io"
+  My Website: "https://www.parisi.io"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -32,7 +32,7 @@ avatar: "https://s3.amazonaws.com/pioimages/wp-content/uploads/2018/01/23113953/
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
+#title-img: '/img/1500x500.jpeg'
 
 # --- Background colour/image options --- #
 
@@ -51,9 +51,9 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-# navbar-img: "/img/bgimage.png"
-# footer-img: "/img/bgimage.png"
-# page-img: "/img/bgimage.png"
+#navbar-img: "/img/1500x500.jpeg"
+#footer-img: "/img/1500x500.jpeg"
+#page-img: "/img/1500x500.jpeg"
 
 # --- Footer options --- #
 
