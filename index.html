@@ -1,11 +1,52 @@
 ---
 layout: page
-title: 'MrTheSegfault'
+title: 'Sharkbite'
 subtitle: 
-use-site-title: false
-bigimg: /img/1500x500.jpeg
+use-site-title: true
 ---
 
+<p><strong>S</strong>harkbite is a native client for key/value stores. With initial support for <a href="https://accumulo.apache.org/">Apache Accumulo</a>, the design can and has been used to support other key/value stores. Development began in 2014 and has slowly evolved. there is no structural specificity to Accumulo despite being the baseimplementation. Despite this the examples below will look very much like Accumulo due to aliasing. This is intentional.</p>
+<p>Currently the code is a merger of C &amp;&amp; C++ code. V0.1 will represent a shift more toward creating a C API and creating exernalized factories for the thrift code.</p>
+<p>Capabilities That will be supported in V0.1 :</p>
+<ul>
+<li>Work with Accumulo 1.6.x, 1.7.x, 1.8.x, and 1.9.x </li>
+<li><strong>Read/Write</strong> : Reading and writing data to Accumulo is currently supported.</li>
+<li><strong>Table Operations</strong> : Most table operations are currently supported. This includes the fate operations that the normal Accumulo client performs.</li>
+<li><strong>Security Operations</strong> : Security operations aren’t all implemented, but you should be able to add users, change authorizations, passwords, and remove users.</li>
+</ul>
+<h2>ABOUT THE NAME</h2>
+<p><strong>S</strong>harkbite&#8217;s name originated from design as a connector that abstracted components in which we tightly<br />
+coupled and gripped interfaces of the underlying datastore. With an abstraction layer for access, and using<br />
+cross compatible objects, the underlying interfaces are heavily coupled to each database. As a result, Sharkbite became a fitting name since interfaces exist to abstract the high coupling that exists within implementations of  the API.</p>
+<h2 id="requirements">Requirements</h2>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>GNU 4+
+
+cmake
+
+make
+
+libhdfs3 ( optional -- https://github.com/apache/hawq/tree/master/depends/libhdfs3 )
+
+</code></pre>
+</div>
+<h2></h2>
+<h2 id="building">Building</h2>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>run install scripts located in root directory
+
+
+
+mkdir build &amp;&amp; cd build &amp;&amp; cmake .. &amp;&amp; cmake --build . ; make test
+
+
+
+This will build the package and library, which you can use. It will also build
+
+examples in the examples directory
+
+</code></pre>
+</div>
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
