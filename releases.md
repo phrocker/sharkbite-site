@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Sharkbite Releases
 image: https://www.sharkbite.io/wp-content/uploads/2017/02/sharkbite.jpg
 ---

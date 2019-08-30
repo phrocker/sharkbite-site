@@ -1,6 +1,6 @@
 ---
-layout: post
-title: C++ Example
+layout: page
+title: Python Example
 image: https://www.sharkbite.io/wp-content/uploads/2017/02/sharkbite.jpg
 ---
 <p>The following is an example of using the API to create a scanner and read data from an accumulo instance.</p>
