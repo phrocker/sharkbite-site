@@ -21,7 +21,7 @@ baseurl: ""
 # List of links in the navigation bar
 navbar-links:
   Home: 'https://www.sharkbite.io'
-  GitHub: 'https://www.github.com/phrocker/sharkbite"
+  GitHub: 'https://www.github.com/phrocker/sharkbite'
   Examples:
      - C++: "/C++"
      - Python: "/Python"
