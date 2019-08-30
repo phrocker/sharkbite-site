@@ -29,7 +29,7 @@ image: https://www.sharkbite.io/wp-content/uploads/2017/02/sharkbite.jpg
 
 
 
-    auto master = new MasterConnect(&amp;creds, instance);
+    auto master = new MasterConnect(&creds, instance);
 
 
 
@@ -37,7 +37,7 @@ image: https://www.sharkbite.io/wp-content/uploads/2017/02/sharkbite.jpg
 
     // create the scanner with ten threads.
 
-    auto scanner = ops->createScanner (&amp;auths, 10);
+    auto scanner = ops->createScanner (&auths, 10);
 
     // range from a to d
 
@@ -53,7 +53,7 @@ image: https://www.sharkbite.io/wp-content/uploads/2017/02/sharkbite.jpg
 
     // build your range.
 
-    scanner->addRange(&amp;range);
+    scanner->addRange(&range);
 
 
 
@@ -61,11 +61,11 @@ image: https://www.sharkbite.io/wp-content/uploads/2017/02/sharkbite.jpg
 
 
 
-    for (const auto &amp;iter : results) {
+    for (const auto &iter : results) {
 
 	auto kv = *iter;
 
-	if (kv != NULL &amp;&amp; kv->getKey() != NULL)
+	if (kv != NULL && kv->getKey() != NULL)
 
 	    cout << "got -- " << (*iter)->getKey() << endl;
 
@@ -107,7 +107,7 @@ image: https://www.sharkbite.io/wp-content/uploads/2017/02/sharkbite.jpg
 
 
 
-    interconnect::MasterConnect *master = new MasterConnect(&amp;creds, instance);
+    interconnect::MasterConnect *master = new MasterConnect(&creds, instance);
 
 
 
@@ -117,7 +117,7 @@ image: https://www.sharkbite.io/wp-content/uploads/2017/02/sharkbite.jpg
 
     // create the scanner with ten threads.
 
-    std::unique_ptr<scanners::BatchScanner> scanner = ops-&gt;createScanner (&amp;auths, 10);
+    std::unique_ptr<scanners::BatchScanner> scanner = ops-&gt;createScanner (&auths, 10);
 
     // range from a to d
 
@@ -147,7 +147,7 @@ image: https://www.sharkbite.io/wp-content/uploads/2017/02/sharkbite.jpg
 
 	KeyValue *kv = *iter;
 
-	if (kv != NULL &amp;&amp; kv->getKey() != NULL)
+	if (kv != NULL && kv->getKey() != NULL)
 
 	    cout << "got -- " << (*iter)->getKey() << endl;
 
